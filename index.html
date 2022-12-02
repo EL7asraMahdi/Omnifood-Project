@@ -13,22 +13,36 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/App.css" />
     <link rel="stylesheet" href="./css/queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./Js/script.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header sticky">
       <a href="#">
         <img class="logo" src="./img/omnifood-logo.png" alt="Omnifood Logo" />
       </a>
       <nav class="main__nav">
         <ul class="main__nav__list">
-          <li><a class="main__nav__link" href="#">How it works</a></li>
-          <li><a class="main__nav__link" href="#">Meals</a></li>
-          <li><a class="main__nav__link" href="#"> Testimonials</a></li>
-          <li><a class="main__nav__link" href="#">Pricing</a></li>
+          <li><a class="main__nav__link" href="#how">How it works</a></li>
+          <li><a class="main__nav__link" href="#meals">Meals</a></li>
           <li>
-            <a class="main__nav__link nav__link__cta" href="#">Try for free</a>
+            <a class="main__nav__link" href="#testimonials"> Testimonials</a>
+          </li>
+          <li><a class="main__nav__link" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="main__nav__link nav__link__cta" href="#cta"
+              >Try for free</a
+            >
           </li>
         </ul>
       </nav>
@@ -50,10 +64,10 @@
               nutritional needs.
             </p>
             <div class="btns">
-              <a href="#" class="btn btn--full margin-right-sm"
+              <a href="#cta" class="btn btn--full margin-right-sm"
                 >Start eating well</a
               >
-              <a href="#" class="btn btn--outline">Learn more &darr;</a>
+              <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             </div>
             <div class="delivred__meals">
               <div class="delivred__imgs">
@@ -93,7 +107,7 @@
         </div>
       </section>
 
-      <section class="featured__section">
+      <section class="featured__section" id="feature">
         <div class="container">
           <h2 class="featured__heading">As Featured in</h2>
           <div class="logos">
@@ -106,7 +120,7 @@
         </div>
       </section>
 
-      <section class="how__section">
+      <section class="how__section" id="how">
         <div class="container center__text">
           <span class="subheading">How It Works</span>
           <h2 class="heading__secondary">
@@ -158,7 +172,7 @@
           </div>
         </div>
       </section>
-      <section class="meals__section">
+      <section class="meals__section" id="meals">
         <div class="container">
           <span class="subheading center__text">meals</span>
           <h2 class="heading__secondary">
@@ -265,7 +279,7 @@
           <a href="#" class="link">see all recipes &rarr;</a>
         </div>
       </section>
-      <section class="testimonials__section">
+      <section class="testimonials__section" id="testimonials">
         <div class="testimonial__container">
           <span class="subheading">testimonials</span>
           <h2 class="heading__secondary">Once you try it, you can't go back</h2>
@@ -360,7 +374,7 @@
           </figure>
         </div>
       </section>
-      <section class="pricing__section">
+      <section class="pricing__section" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading__secondary">
@@ -393,7 +407,7 @@
               </li>
             </ul>
             <div class="plan__signup">
-              <a href="#" class="btn btn--full">Start eating well</a>
+              <a href="#cta" class="btn btn--full">Start eating well</a>
             </div>
           </div>
           <div class="pricing__plan pricing__plan-complete">
@@ -421,7 +435,7 @@
               </li>
             </ul>
             <div class="plan__signup">
-              <a href="#" class="btn btn--full">Start eating well</a>
+              <a href="#cta" class="btn btn--full">Start eating well</a>
             </div>
           </div>
         </div>
@@ -466,7 +480,7 @@
           </div>
         </div>
       </section>
-      <section class="cta__section">
+      <section class="cta__section" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta__text__box">
@@ -527,36 +541,45 @@
           </a>
           <ul class="social__links">
             <li>
-              <a class="footer__link" href=""
+              <a
+                class="footer__link"
+                href="https://instagram.com/el7asra_v2.0?igshid=ZDdkNTZiNTM="
+                target="_blank"
                 ><ion-icon class="social__icon" name="logo-instagram"></ion-icon
               ></a>
             </li>
             <li>
-              <a class="footer__link" href=""></a
-              ><ion-icon class="social__icon" name="logo-facebook"></ion-icon>
+              <a
+                class="footer__link"
+                href="https://www.facebook.com/el.hasra.5"
+                target="_blank"
+                ><ion-icon class="social__icon" name="logo-facebook"></ion-icon
+              ></a>
             </li>
+
             <li>
-              <a class="footer__link" href=""
+              <a
+                class="footer__link"
+                href="https://twitter.com/el7asra?t=PlPKx5MeV1G4HH22441NIQ&s=09"
+                target="_blank"
                 ><ion-icon class="social__icon" name="logo-twitter"></ion-icon
               ></a>
             </li>
           </ul>
           <p class="copyright">
-            copyright &copy; 2099 by Omnifood, Inc. All right reserved
+            copyright &copy; <span class="year"></span> by Omnifood, Inc. All
+            right reserved
           </p>
         </div>
         <div class="address__col">
           <p class="footer__heading">Contact us</p>
           <address class="contacts">
-            <p class="address">
-              623 Harrison St., 2nd Floor, San Francisco, CA 94107
-            </p>
+            <p class="address">Bouknadel SALE, Morocco</p>
             <p>
-              <a class="footer__link" href="tel:+94107 415-201-6370"
-                >415-201-6370</a
+              <a class="footer__link" href="tel:+212688503978">+212688503978</a
               ><br />
-              <a class="footer__link" href="mailto:hello@omnifood.com"
-                >hello@omnifood.com</a
+              <a class="footer__link" href="mailto:mahdi.elhasra@gmail.com"
+                >Mahdi.elhasra@gmail.com</a
               >
             </p>
           </address>
@@ -589,14 +612,5 @@
         </div>
       </div>
     </footer>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
