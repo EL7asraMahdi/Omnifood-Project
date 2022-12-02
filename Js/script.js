@@ -9,7 +9,7 @@ btnMobile.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });
 // SMOOTH SCROLLING :
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll(".main__nav__link:link");
 allLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
